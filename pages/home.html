@@ -6,15 +6,15 @@
         <h4><strong>All questions</strong></h4>
       </div>
       <div class="col-md-4 pull-right" id="tabs">
-        <a ng-class="{youarehere : home.sort==='-dt_create'}" 
+        <a ng-class="{youarehere : home.sort==='-dt_create'}"
         ng-click="home.sortQuestion('newest')">newest</a>
-        <a ng-class="{youarehere : home.sort === '-actions.votes.total'}"  
+        <a ng-class="{youarehere : home.sort === '-actions.votes.total'}"
         ng-click="home.sortQuestion('votes')">votes</a>
         <a ng-class="{youarehere : home.sort === '-dt_update'}"
         ng-click="home.sortQuestion('active')">active</a>
       </div>
     </div>
-    
+
     <ul class="question-list" infinite-scroll="home.loadNext(home.page)" infinite-scroll-disabled="home.busy" infinite-scroll-distance="1">
       <li class="question-row" ng-repeat="q in home.questions.instance">
         <div class="row">
@@ -23,10 +23,10 @@
 
             <div class="row">
               <div class="col-md-4 numbers">{{q.instance.actions.votes.users_upvote.length - q.instance.actions.votes.users_downvote.length}}</div>
-              <div class="col-md-4 numbers" 
+              <div class="col-md-4 numbers"
                 ng-class="{
-                  answered   :  q.instance.haveAnswers, 
-                  unanswered : !q.instance.haveAnswers, 
+                  answered   :  q.instance.haveAnswers,
+                  unanswered : !q.instance.haveAnswers,
                   answeredAccepted : q.instance.checked
                 }">
                 {{q.instance.answers.length}}
@@ -38,14 +38,14 @@
               <div class="col-md-4 no-padding small">votes</div>
               <div class="col-md-4 no-padding small"
                 ng-class="{
-                  answered : q.instance.haveAnswers, 
-                  unanswered : !q.instance.haveAnswers, 
+                  answered : q.instance.haveAnswers,
+                  unanswered : !q.instance.haveAnswers,
                   answeredAccepted : q.instance.checked
                 }">
                 answers</div>
               <div class="col-md-4 no-padding small views">views</div>
             </div>
-            
+
           </div>
 
           <div class="col-md-9">
@@ -61,7 +61,7 @@
               </div>
               <div class="col-md-6 pull-right" ng-show="sort.active">
                 updated {{q.instance.dt_update | date:"mediumDate"}} by {{q.instance.author.instance.displayName}}
-              </div>          
+              </div>
             </div>
           </div>
 
@@ -78,26 +78,26 @@
 
     <div id="hireme" class=" blue looking tagged">
       <a href="#" class="top" target="_blank">
-        <span>Looking for a job?</span> 
-      </a> 
-      <ul class="jobs"> 
-        <li> 
+        <span>Looking for a job?</span>
+      </a>
+      <ul class="jobs">
+        <li>
           <a href="#" target="_blank" title="NodeJS Developer.">
-            <span class="title">NodeJS Developer at Stamplay</span> 
-            <span class="company">Stamplay</span> 
-            <span class="location">London, UK</span> 
-            <span class="post-tag">javascript</span> 
-            <span class="post-tag">nodejs</span> 
-          </a> 
-        </li> 
-        <li> 
-          <a href="#" target="_blank" title="AngularJS Engineer at Stamplay."> 
-            <span class="title">AngularJS Engineer at Stamplay</span> 
-            <span class="company">Stamplay</span> 
-            <span class="location">London, UK</span> 
+            <span class="title">NodeJS Developer at Stamplay</span>
+            <span class="company">Stamplay</span>
+            <span class="location">London, UK</span>
+            <span class="post-tag">javascript</span>
+            <span class="post-tag">nodejs</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" title="AngularJS Engineer at Stamplay.">
+            <span class="title">AngularJS Engineer at Stamplay</span>
+            <span class="company">Stamplay</span>
+            <span class="location">London, UK</span>
             <span class="post-tag">angularjs</span>
-             <span class="post-tag">javascript</span> 
-           </a> 
-         </li> 
-       </ul> 
+             <span class="post-tag">javascript</span>
+           </a>
+         </li>
+       </ul>
 </div>

@@ -1,13 +1,14 @@
 {
-  "name": "stackoverflow",
+  "name": "studio-on-studio",
   "version": "0.0.0",
   "authors": [
-    "Alessandro Oliveri <alessandro.oliveri@stamplay.com>"
+    "Alessandro Oliveri <alessandro.oliveri@stamplay.com>",
+    "rafal szulczewski <rafszul@gmail.com>"
   ],
-  "description": "stackoverflow on stamplay",
+  "description": "studio-on-studio on stamplay",
   "main": "index.html",
   "license": "MIT",
-  "homepage": "https://stackoverflow.stamplayapp.com",
+  "homepage": "https://studio4studio.stamplayapp.com",
   "ignore": [
     "**/.*",
     "node_modules",

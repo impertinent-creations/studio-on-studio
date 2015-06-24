@@ -1,16 +1,16 @@
 {
-  "name": "Stamplay_StackOverflow",
+  "name": "studio-on-studio",
   "version": "0.0.0",
-  "description": "stamplay-stackoverflow ======================",
+  "description": "studio-on-studio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stamplay/stamplay-stackoverflow.git"
+    "url": "https://github.com/impertinent-creations/studio-on-studio.git"
   },
-  "author": "",
+  "author": "rafszul",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -27,7 +27,7 @@
     "time-grunt": "^0.3.1"
   },
   "bugs": {
-    "url": "https://github.com/Stamplay/stamplay-stackoverflow/issues"
+    "url": "https://github.com/impertinent-creations/studio-on-studio/issues"
   },
-  "homepage": "https://github.com/Stamplay/stamplay-stackoverflow"
+  "homepage": "https://github.com/impertinent-creations/studio-on-studio"
 }
