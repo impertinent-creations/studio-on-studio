@@ -1,7 +1,7 @@
 # studio-on-studio
 studio-on-studio
 
-what does it do? hmm, it would be the easiest to explain by rudely replying with a question. do you know [stackoverflow](http://stackoverflow.com/)? sure you do, so this app is pretty much the same thing. 
+what does it do? hmm, it would be the easiest to explain by rudely replying with a question. do you know [stackoverflow](http://stackoverflow.com/)? sure you do, so this app is pretty much the same thing.
 
 check out these user stories to know exactly what the app does:
 

@@ -44,7 +44,7 @@ Go to [your account](http://editor.stamplay.com/apps) and create a new app.
 After creating a new app on [Stamplay](https://editor.stamplay.com) let's start by picking the component we need in our app. Lets see one-by-one how they are configured:
 
 ### User
-Since this is something for developers we decided to make our users signup with our last OAuth integration, Github. To get your own credentials go to [https://github.com/settings/applications](https://github.com/settings/applications) and click on "Register a new app". Fill the "Authorized Redirect URIs" with the URL: **https://[appId].stamplay.com/auth/v0/github/callback** and you'll have your ClientId and Secret to fill the fields as you can see from the image below. 
+Since this is something for developers we decided to make our users signup with our last OAuth integration, Github. To get your own credentials go to [https://github.com/settings/applications](https://github.com/settings/applications) and click on "Register a new app". Fill the "Authorized Redirect URIs" with the URL: **https://[appId].stamplay.com/auth/v0/github/callback** and you'll have your ClientId and Secret to fill the fields as you can see from the image below.
 
 ![Github OAuth](http://blog.stamplay.com/wp-content/uploads/2014/09/Schermata-2014-09-09-alle-16.27.56.png "Github OAuth")
 
@@ -79,7 +79,7 @@ the tags that can be associated to a question. These can be created only by the 
 * Name: `count`, Type: `number`, optional, how many questions have been tagged with the tag
 * Name: `excerpt`, Type: `string`, optional, tag’s short description
 
-After setting up this Stamplay will instantly expose Restful APIs for our newly resources the following URIs: 
+After setting up this Stamplay will instantly expose Restful APIs for our newly resources the following URIs:
 
 * `https://APPID.stamplay.com/api/cobject/v0/question`
 * `https://APPID.stamplay.com/api/cobject/v0/answer`
@@ -209,7 +209,7 @@ Action: Gamification - Add Points
 
 
  After finishing all those configurations your task view will look like this one:
- 
+
  ![Tasks Stackoverflow](http://blog.stamplay.com/wp-content/uploads/2014/09/Schermata-2014-09-15-alle-12.48.05.png "Tasks Stackoverflow")
 
 
@@ -246,7 +246,7 @@ Handles user login redirecting the browser to the auth start flow URL acting on 
 Handles user logout redirecting the browser to the logout URL acting on the `window.location.href` property.
 
 ##### Home controller (homeCtrl.js)
-Here is stores the `sort` criteria currently used to list the questions. When the controller starts `loadQuestion` is triggered and it loads questions, their authors and also checks if a "checked" (correct) answer already exists. 
+Here is stores the `sort` criteria currently used to list the questions. When the controller starts `loadQuestion` is triggered and it loads questions, their authors and also checks if a "checked" (correct) answer already exists.
 `loadNext` is triggered on user scroll to load more questions.
 `sortQuestion` is called when we need to change the sort criteria.
 
@@ -282,7 +282,7 @@ Manage the User models and the Logged user interactions
 
 
 ### Dependencies
-Run `bower install` 
+Run `bower install`
 
 * lib/ng-infinite-scroll
 * lib/ui-bootstrap-0.11.0
@@ -315,10 +315,10 @@ You will find the application's controllers minified in dist/controllers.min.js,
 First, clone this repository :
 
     git clone git@github.com:Stamplay/stamplay-stackoverflow
-    
+
 Or download it as a zip file
-	
-	https://github.com/Stamplay/stamplay-stackoverflow/archive/master.zip 
+
+	https://github.com/Stamplay/stamplay-stackoverflow/archive/master.zip
 
 Then you need to upload the frontend files in your app by using the [CLI tool](https://github.com/Stamplay/stamplay-cli):
 
