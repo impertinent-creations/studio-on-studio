@@ -1,7 +1,7 @@
 {
   "appId": "studio4studio",
   "apiKey": "ddfeb50269b1dc4d569eef8ec16bcd6a424a4e8e65968444336e3035280adc38",
-  "public": "./",
+  "public": "./pages/",
   "ignore": [
     "stamplay.json",
     "**/.*",
